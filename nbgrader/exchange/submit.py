@@ -138,3 +138,27 @@ class ExchangeSubmit(Exchange):
         self.log.info("Submitted as: {} {} {}".format(
             self.course_id, self.coursedir.assignment_id, str(self.timestamp)
         ))
+
+    def push_to_students(self)
+    '''
+        This function serves as a tool for the grader, so he is the one in charge
+        of delivering the assignments to the students.
+
+        To do this, he must retrieve a list of all the students enrolled in a particular
+        class, and then he copies the contents of the exchange folder to each student's home.
+
+        There must be checks to ensure that the grader does have access to the DB, and that 
+        is able to deliver to each student.
+    '''
+
+    def pull_from_students(self)
+    '''
+        This function serves as a tool for the grader, so he is the one in charge
+        of retrieving the assignments from the students.
+
+        To do this, he must retrieve a list of all the students enrolled in a particular
+        class, and then he copies the contents of each student's home to the exchange folder.
+
+        There must be checks to ensure that the grader does have access to the DB, and that 
+        is able to retrieve from each student.
+    '''
