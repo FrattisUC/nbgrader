@@ -46,11 +46,11 @@ User cases that serve for motivation for the inclusion of this service:
 
 ## To-Do list
 
-- [ ] Set correctly the permissions for the exchange folder (only graders can access said folder and its contents), and re-configure nbgrader so it accepts this new way of treating the folder.
-- [ ] Create a DB that reflects the relation between students and courses, and between graders and courses.
-- [ ] Create the DB keeper service.
-- [ ] Graders' ability to push to the students' repositories.
-- [ ] Graders' ability to pull from the student's repositories.
-- [ ] Change the front-end, so the graders' view reflect this changes.
-- [ ] Allow graders to set timers so the pull-push is done automatically.
-- [ ] Improve how nbgrader delivers feedbacks, depending on the context of the situation.
+* [ ] Set correctly the permissions for the exchange folder (only graders can access said folder and its contents), and re-configure nbgrader so it accepts this new way of treating the folder.
+* [ ] Create a DB that reflects the relation between students and courses, and between graders and courses.
+* [ ] Create the DB keeper service.
+* [ ] Graders' ability to push to the students' repositories.
+* [ ] Graders' ability to pull from the student's repositories.
+* [ ] Change the front-end, so the graders' view reflect this changes.
+* [ ] Allow graders to set timers so the pull-push is done automatically.
+* [ ] Improve how nbgrader delivers feedbacks, depending on the context of the situation.
