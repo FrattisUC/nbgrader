@@ -74,6 +74,23 @@ class Exchange(LoggingConfigurable):
         )
     ).tag(config=True)
 
+    # Aqui va la config de la BD, default PSQL.
+
+    dbname = Unicode(
+        "nbgrader",
+        help="The database that contains the relations between users-courses and graders-courses."
+    ).tag(config=True)
+
+    dbuser = Unicode(
+        "nbgrader",
+        help="The database user to access said database."
+    ).tag(config=True)
+
+    dbpass = Unicode(
+        os.environ["NBDBPASS"],
+        help="The database password that will must be kept in the env. variable NBDBPASS."
+    ).tag(config=True)
+
     coursedir = Instance(CourseDirectory, allow_none=True)
 
     def __init__(self, coursedir=None, **kwargs):
